@@ -1,0 +1,22 @@
+body			{ background-color: #D1E8E2; color:#116466; }
+			table, tr, td	{ border: 1px solid black ; } 
+#first {text-align: center;}
+
+			
+			table			{ width: 60% ;
+							  margin-left: auto ; 
+							  margin-right: auto ;
+							  border-width: 3px ;
+							  border-style: solid ;} 
+
+			tr, td			{ padding: .5em ; }
+
+			h1,h2, div, p		{ text-align: center ; }
+			
+			p				{ color: green ; }
+
+			img				{ width: 20%; height: 20% ; }
+			
+			button			{ display: block ;
+							  margin-left: auto ;
+							  margin-right: auto ; }

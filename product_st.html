@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+        <link rel="stylesheet" type="text/css" href="pro.css">
+        <link rel="stylesheet" type="text/css" href="menu.css">
+        <title>Aldeep Clothing-Products</title>
+		
+
+	<script>
+
+		function saveLowQty()
+		{
+			
+			var tblRows = document.getElementById("tblProd").rows;
+
+		
+			var tblCells;
+			
+			
+		
+			var prodObj = [] ;
+			var prodJSON ;
+
+			var prodQty, prodID ;
+
+		
+			var iLowCount = 0 ;
+			
+		
+			for(iRow = 0; iRow < tblRows.length; iRow++)
+			{    
+			
+				prodQty = tblRows[iRow].cells[2].innerText ;
+				
+				
+				if ( prodQty < 3 )
+				{
+					
+					iLowCount ++ ;
+				
+					prodID = tblRows[iRow].cells[0].innerText ;
+					
+					prodObj.push({ "prodID":prodID, "prodQty":prodQty }) ;
+				}
+		     }
+			 
+			
+			prodJSON = JSON.stringify(prodObj);
+			
+			
+			localStorage.setItem("prodJSON", prodJSON);
+
+			document.getElementById("pLowQty").innerText = "Attn:  There are " + iLowCount + " products with a low quantity on hand." ;
+
+		}
+
+		</script>
+	</head>
+<body>
+		<h1> Aldeep Clothing&reg</h1>
+		<h2>Our Products</h2>
+		<br>
+		<!--The nav element below is another option for creating a menu.  The pages referenced here do not exist in this folder, but it gives you an example of how to create the
+			menu.-->
+		<div id="first">
+ 			<nav>
+            <a href = "Project 2.html">Home</a>
+            &nbsp;
+           <a href = "contact_st.html">Contact Us</a>
+           &nbsp;
+           <a href = "product_st.html">Products</a>
+           &nbsp;
+
+           <a href = "about_st.html" >About Us</a>
+           &nbsp;
+          </nav>
+          </div>
+
+		
+		<form action="#" style="text-align: center">
+		<div style="text-align: center; width: 90%;">
+		<br>
+		<p>
+		<table align="center">
+			<thead>
+				<tr>
+					<th><a id="sortID" href="javascript:sortByID( )" style="text-decoration-line: underline; color: brown;">Product ID</a></th>
+					<th></th>
+					<th><a id="sortName" href="javascript:sortByName( )" style="text-decoration-line: underline; color: brown">Product Name</a></th>
+                              <th><a id="sortName" href="javascript:sortByDescription( )" style="text-decoration-line: underline; color: brown">Product Description</a></th>
+					<th><a id="sortPrice" href="javascript:sortByPrice( )" style="text-decoration-line: underline; color: brown">Product Price</a></th>
+					<th><a style="text-decoration-line:underline ; color: brown">Quantity</a></th>
+			</thead>
+			
+			<tbody id = "tbodyRows" style="color: black;">
+
+			</tbody>
+		</table>
+		</p>
+		</div>			
+		
+		<p style="width: 80%; text-align: right">
+			<input type="submit" value="Confirm" onclick = "javascript:confirmQty();">
+			<input type="reset" value="Reset">
+		</p>
+
+		<script src="main.js"></script>
+            
+
+        
+		
+    	</form>
+
+    
+
+	</body>
+			
+
+</html>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	

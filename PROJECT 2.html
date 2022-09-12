@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<meta charset="UTF-8">
+<meta  name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aldeep Clothing</title>
+
+<script>
+   
+        window.onload = function() {
+          
+            function createCookie(name,value,days) {
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime()+(days*24*60*60*1000));
+                    var expires = "; expires="+date.toGMTString();
+                }
+                else var expires = "";
+                document.cookie = name+"="+value+expires+"; path=/";
+            }
+   
+
+    
+            function readCookie(name) {
+                var saj_T = name + "=";
+                var x = document.cookie.split(';');
+                for(var i=0;i < x.length;i++) {
+                    var s = x[i];
+                    while (s.charAt(0)==' ') s = s.substring(1,s.length);
+                    if (s.indexOf(saj_T) == 0) return s.substring(saj_T.length,s.length);
+                }
+                return null;
+            }
+  
+ 
+            if(person=readCookie("person")) {
+               
+                document.getElementById("personaltext").innerHTML = "Welcome, " + person + ". We hope you will enjoy visit !"
+                document.getElementById("providename").innerText = "Please click here if you are not " + person+ "."
+
+            } else {
+             
+                document.getElementById("providename").innerText = "Please click here to provide your name."
+            }
+            
+            document.getElementById("providename").addEventListener("click", function(){ 
+                
+                var person = prompt("Please enter your name:");
+                
+                if (person == null || person == "") {
+                    
+                } else {
+                    
+                    
+                    document.getElementById("personaltext").innerHTML = "Welcome, " + person + ". We hope you will enjoy visit to Aldeep Clothing!"
+                    
+                    createCookie("person", person, 7);
+                   
+                    document.getElementById("providename").innerText = "Please click here if you are not " + person+ "."
+                }
+            });
+
+           
+           
+            setTimeout(function(){
+                
+                var random = Math.round(Math.random() * 1000000);
+                
+                var isNotDivisible = (random%5);
+                
+                if(!isNotDivisible) {
+                    
+                    alert("You have been randomly selected to participate in a customer satisfaction survey.")
+                    // SURVEY PAGE URL
+                    location.href = "file:///C:/Users/Sajina%20Tiwari/OneDrive%20-%20University%20of%20Texas%20at%20Arlington/Desktop/4315_Lab1_sxt9121/PROJECT%201.html"
+                }
+            }, 5000);
+        }
+</script>
+
+
+</head>
+
+<body>
+
+<h1>Thank You for Choosing Aldeep Clothing</h1>
+ <br>
+
+<div class="img_text" >
+Welcome to Aldeep Clothing.Aldeep Clothing is one of the top stores selling a variety of collections of different brands. Our main office is located in Dallas, Texas.We accept the customized design from the customers and make the order at their convenience.Our store motto is to provide happiness and satisfaction to our lovely customers.
+<img src="OIP.jpg" alt="Clothing" style="width:20%; padding-left:2%; padding-right: 2%;">
+</div>
+
+<div style="display: flex; width: 70%;">
+        <img style="width: 30%;"  src="NEW.jpg" alt="">
+        <div style="width: 70%; margin: 3%;">
+            <p id="personaltext">Want a more personalized experience on our website?</p>
+            <a href="#" id="providename"></a>
+        </div>
+</div>
+
+</body>
+</html>	

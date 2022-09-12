@@ -1,0 +1,15 @@
+body{background-color:#D1E8E2; color:#116466;
+    }
+h1{text-align:center; }
+h2{text-align:center; }
+h3{text-align:center; width:100%;}
+#first {text-align: center;}
+#second{display: flex; width:80%;padding:5%;}
+#third{display:flex; padding:5%}
+#fourth{display: flex; width: 70%;padding:5%}
+#fifth{display: flex; width: 70%;padding:5%}
+#sixth{display: flex; width: 70%;padding:5%}
+img{width:20%;padding-left:2%}
+.person{width:20%;}
+.person1{width:20%;}
+.person2{width:20%;}

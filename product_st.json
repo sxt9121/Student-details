@@ -1,0 +1,83 @@
+[
+
+   {
+      "prodID":1,
+      "prodImg":"product1.jpg",
+      "prodName":"Mini Dress",
+      "prodDesc":"Womes's purple Sleveless Mini Dress with .",
+      "prodPrice":22.99
+  },
+
+    {
+      "prodID":2,
+      "prodImg":"product2.jpg",
+      "prodName":"Floral Dress",
+      "prodDesc":"All over Floral Print High Low Hem A-Line Dress.",
+      "prodPrice":34.99
+  },
+  
+   {
+      "prodID":3,
+      "prodImg":"product3.jpg",
+      "prodName":"Saree",
+      "prodDesc":"Peach Color Trendy Saree with black embroidered blouse .",
+      "prodPrice":45.99
+  },
+
+    {
+      "prodID":4,
+      "prodImg":"product4.jpg",
+      "prodName":"Flat Shoe",
+      "prodDesc":"Spring Autumn Low Heels shoes for women .",
+      "prodPrice":20.99
+  },
+ 
+    {
+      "prodID":5,
+      "prodImg":"product5.jpg",
+      "prodName":"Sandals",
+      "prodDesc":"Ladies Fashion Solid Open Toe Sandals.",
+      "prodPrice":30.99
+  },
+
+    {
+      "prodID":6,
+      "prodImg":"product6.jpg",
+      "prodName":"Shirt",
+      "prodDesc":"Slim-Fit Stretch-Blue Oxford Shirt  .",
+      "prodPrice":30.99
+  },
+
+    {
+      "prodID":7,
+      "prodImg":"product7.jpg",
+      "prodName":"Sleeveless Vintage Dress",
+      "prodDesc": "Zebra Printed dress in Sleeveless Irregular Crew Neck Outfit.",
+      "prodPrice":25.99
+  },
+
+    {
+      "prodID":8,
+      "prodImg":"product8.jpg",
+      "prodName":"Long Shocks",
+      "prodDesc":"Men's knee High Woolen Shocks .",
+      "prodPrice":15.99
+  },
+
+     {
+      "prodID":9,
+      "prodImg":"product9.jpg",
+      "prodName":"Waist Coat",
+      "prodDesc":"Casual Sleeveless Formal Business Jacket.",
+      "prodPrice":22.99
+  },
+
+   {
+      "prodID":10,
+      "prodImg":"product0.jpg",
+      "prodName":"Long Coat",
+      "prodDesc":"It is Men's Casual Single Breasted Plaid Mid Long Trench PeaCoat.",
+      "prodPrice":59.99
+  },
+
+]
